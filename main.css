@@ -177,7 +177,7 @@
 }
 
 .beneficts{ 
-  background:var(--background-color) url(img/beneficioback.png) no-repeat;
+  background:var(--background-color) url('https://raw.githubusercontent.com/abad2016/tag-landing/master/img/beneficioback.png') no-repeat;
   background-size:cover;
   background-position:center top;
 }

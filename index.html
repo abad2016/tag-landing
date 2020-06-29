@@ -13,10 +13,14 @@
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
+   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <title>Together As Gamers</title>
 </head>
 
@@ -38,6 +42,9 @@
                 </li>
                 <li class="header_nav_item">
                     <a href="#plans">Planes</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="#contacto">Contacto</a>
                 </li>
                 </ul>
             </div>
@@ -75,15 +82,51 @@
     <section class="section beneficts" id="benefits">
         <div class="wrapper benefits ">
             
-                <div class="section_title">Beneficios</div>
+            <div class="section_title">Beneficios</div>
             
-                <div class="benefits_item">
-                    info
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                               
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/tr.png" alt="Los Angeles" width="1100" height="500">
+                    <div class="carousel-caption">                      
+                        <p>Chat instantáneo entre Gamers, Developers y Event Managers. Haciendo la comunicación entre todos mas rápida y fácil.</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/tr.png" alt="Chicago" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <p>Facilidad para los Gamers de encontrar nuevos juegos ajustados a sus gustos. Podrán ayudar a los game developers a desarrollar sus juegos, probando sus ultimas versiones.</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/tr.png" alt="New York" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <p>Game Developers podrán desarrollar sus juegos y obtener mucho mas feedback, construyendo mejores juegos gracias a la comunidad.</p>
+                    </div>   
+                  </div>
+                  <div class="carousel-item">
+                        <img src="img/tr.png" alt="yo" width="1100" height="500">
+                        <div class="carousel-caption">
+                            <p>Nuevos eventos todos los días y al alcance de todos. Gran facilidad de realizar tus propios eventos!</p>
+                        </div>   
+                      </div>
                 </div>
-                <div class="benefits_item">
-                    info
-                </div>                                
-            </div>
+                
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                  </ul>
+
+              </div>    
+                
+                
+
+
+           
         </div>
     </section>
 
@@ -91,33 +134,44 @@
     <section class="section plans" id="plans">
         <div class="wrapper plan">
         
-            <div class="section_title">planes</div>
+            <div class="section_title">planes</div><br>
         
-            <div class="plans_content">
-                <div class="plans_box">
-                    <div class="plan_item" id="plan_core">
-                        <p class="plan_item_name"><strong>FREE</strong></p>
-                        <p class="plan_item_description">info</p>                        
+            <div class="container">
+                    
+                    <div class="card-deck">
+                      <div class="card ">
                         
-                    </div>
-                    <div class="plan_item plan_item_selected" id="plan_premium">
-                        <p class="plan_item_name"><strong>GOLD</strong></p>
-                        <p class="plan_item_description">info</p> 
+                        <div class="card-body text-center">
+                                <div class="section_title">FREE</div>
+                            <img class="center-block" src="img/heart1.png" style="width:100px" >
+                            <p class="card-text">Se parte de la comunidad de tus desarrolladores favoritos. Recibe Updates de tus juegos preferidos. Ayuda a probar versiones beta de juegos y deja reviews.</p>
+                        </div>
+                      </div>
+                      <div class="card ">
                         
-                    </div>
-                    <div class="plan_item" id="plan_enterprise">
-                        <p class="plan_item_name"><strong>PLATINUM</strong></p>
-                        <p class="plan_item_description">info</p> 
+                        <div class="card-body text-center">
+                                <div class="section_title">GOLD</div>
+                            <img class="center-block" src="img/heart2.png" style="width:100px" >
+                            <p class="card-text">Perks Free +<br> Tus reviews tendrán prioridad al momento de ser leídos. Ten acceso exclusivo a updates de tus desarrolladores favoritos.</p>
+                        </div>
+                      </div>
+                      <div class="card ">
                         
+                        <div class="card-body text-center">
+                                <div class="section_title">PLATINUM</div>
+                            <img class="center-block" src="img/heart3.png" style="width:100px" >
+                            <p class="card-text">Perks Gold +<br> Chatea directamente con tus desarrolladores preferidos. Recibe la opción de probar los videojuegos que desees, ya sea en version alfa o beta.</p>
+                        </div>
+                      </div>  
                     </div>
-                </div>
-            </div>
+                  </div>
+            
         </div>
     </section>
 
 
-    <section class="section contact">
-        <div class="contact_wrapper">
+    <section class="section contact" id="contacto">
+        <div class="wrapper contacto">
             <div class="section_title">Contacto</div>
             <div class="contact_form">
                 <form>
@@ -132,14 +186,14 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col">
                             <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="tag@ignis.com">
                         </div>                        
                     </div>
                     <div class="form-group">
                         <label for="inputComment">Mensaje</label>
-                        <textarea type="text" class="form-control" id="inputComment"  placeholder="escribenos tu duda :^)" ></textarea>
+                        <textarea type="text" class="form-control" id="inputComment"  placeholder="escribenos tu mensaje :^)" ></textarea>
                     </div>
                     <div class="text-center">
                         <button type="button" class="boton" id="contact_button">Enviar</button>
@@ -154,9 +208,9 @@
     <section class="footer">
         <div class="panel top">
            <div class="footer_social">
-            <img src="img/facebook.svg"> <img src="img/instagram.svg"> <img src="img/twitter.svg"> <img src="img/whatapp.svg"></div> 
-           <div class="footer_section_information">
-                <p>tag@ignis.com         |         tag.ignis.com</p>
+            <img src="img/facebook.svg"> <img src="img/instagram.svg"> <img src="img/twitter.svg"> <img src="img/whatapp.svg">
+           
+                <p>tag@ignis.com         |         tag.ignis.com<br>IGNIS @ 2020</p>
             </div>
         </div>
     </section>

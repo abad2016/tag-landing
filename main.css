@@ -5,6 +5,7 @@
     --background-color2: #0F1010;
     --button-color: #FF3C2E;
     --button-color2: #FF2323;
+    --gray: rgb(134, 134, 134);
 }
 
 * {
@@ -155,11 +156,19 @@
 
 .intro{ margin-top:50px; }
 
+.benefits {
+  width:800px;  
+}
+
+.plan{
+ width:100%;
+}
+
 /*SECCIONES------------------*/
 .section{
   position: relative;
   left:0;
-  width: calc(100% - 20vw);
+  width: 100%;
   padding:10vw;
   cursor:default;
 }
@@ -177,17 +186,21 @@
 }
 
 .beneficts{ 
-  background:var(--background-color) url('https://raw.githubusercontent.com/abad2016/tag-landing/master/img/beneficioback.png') no-repeat;
+  background:var(--background-color) url(img/beneficioback.png) no-repeat;
   background-size:cover;
   background-position:center top;
+  text-align:center;
 }
 
 .plans{ 
   background:var(--background-color);
+  text-align:center;
 }
 
 .contact{
   background:var(--background-color2);
+  padding:5vw ;
+  text-align:center;
 }
 
 .footer_social img{
@@ -195,4 +208,28 @@
   height:20px;
   cursor: pointer;
   pointer-events: auto;
+}
+
+.footer_social p{
+  color:var(--text-color2);
+  font-size:12px;
+  margin-top:5px;
+}
+
+/* CAROUSEL --------------*/
+
+.carousel-inner img {
+  width: 100%;
+  height:200px;
+}
+
+.carousel-indicators {
+  top: 160px;
+}
+
+.card{
+  background:transparent!important;  
+  border:1px solid var(--gray)!important;
+  text-align:center!important;
+  border-radius: 10px!important; 
 }
